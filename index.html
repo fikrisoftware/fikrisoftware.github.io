@@ -65,8 +65,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <!-- Profile Image -->
@@ -74,17 +76,19 @@
                     <div class="profile-image-wrapper">
                         <picture>
                             <source type="image/webp" 
-                                    srcset="assets/IMAGES/Profile-200.webp?v=1.0.0 200w,
-                                            assets/IMAGES/Profile-400.webp?v=1.0.0 400w,
-                                            assets/IMAGES/Profile-800.webp?v=1.0.0 800w"
-                                    sizes="(max-width: 768px) 150px, 200px">
-                            <img src="assets/IMAGES/Profile.png?v=1.0.0" 
+                                    srcset="assets/IMAGES/Profile-200.webp?v=1.0.0 1x,
+                                            assets/IMAGES/Profile-400.webp?v=1.0.0 2x"
+                                    media="(max-width: 768px)">
+                            <source type="image/webp" 
+                                    srcset="assets/IMAGES/Profile-200.webp?v=1.0.0 1x,
+                                            assets/IMAGES/Profile-400.webp?v=1.0.0 2x">
+                            <img src="assets/IMAGES/Profile-200.webp?v=1.0.0" 
                                  alt="Muhammad Fikri Akbar" 
                                  class="profile-image" 
                                  width="200" 
                                  height="200" 
                                  loading="eager" 
-                                 onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+                                 onerror="this.src='assets/IMAGES/Profile.png?v=1.0.0'">
                         </picture>
                         <div class="profile-placeholder" style="display: none;">MFA</div>
                     </div>
@@ -786,7 +790,8 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
