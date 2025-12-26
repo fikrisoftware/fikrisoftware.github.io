@@ -241,6 +241,6 @@ Add before closing `</head>` tag:
 
 ---
 
-**Last Updated**: December 2024
+**Last Updated**: December 2025
 
 ? If you like this portfolio template, please give it a star!
