@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Fikri Akbar - Senior .NET Developer with 9+ years experience in Banking Systems, System Integration, and DevOps">
+    <meta name="keywords" content=".NET Developer, System Engineer, Banking Systems, ASP.NET, C#, DevOps">
+    <meta name="author" content="Muhammad Fikri Akbar">
+    <title>Muhammad Fikri Akbar | Senior .NET Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">MFA</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="control-btn" aria-label="Toggle theme" title="Toggle theme">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+                <button id="lang-toggle" class="control-btn" aria-label="Change language" title="Change language">
+                    <i id="lang-flag" class="fas fa-globe"></i>
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Image -->
+                <div class="hero-profile">
+                    <div class="profile-image-wrapper">
+                        <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder" style="display: none;">MFA</div>
+                    </div>
+                </div>
+                
+                <h1 class="hero-title">Muhammad Fikri Akbar</h1>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">Fullstack .NET Developer | IT System Engineer Lead</h2>
+                <p class="hero-description">
+                    <span data-i18n="hero.description1">9+ years experience in Banking & Financial Systems,</span><br>
+                    <span data-i18n="hero.description2">System Integration, Web API, and DevOps with Azure</span>
+                </p>
+                <p class="hero-company">
+                    <i class="fas fa-building"></i> <span data-i18n="hero.company">Currently working at</span> <strong>PT. Bank Sahabat Sampoerna</strong>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> <span data-i18n="hero.btn.contact">Contact Me</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mfa-muhammadfikriakbar/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> <span data-i18n="hero.btn.linkedin">LinkedIn</span>
+                    </a>
+                    <a href="assets/CV_Muhammad_Fikri_Akbar.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> <span data-i18n="hero.btn.downloadcv">Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        <span data-i18n="about.lead.part1">I am a</span> <strong data-i18n="about.lead.strong1">Fullstack .NET Developer</strong> <span data-i18n="about.lead.part2">with over</span> <strong data-i18n="about.lead.strong2">9 years of experience</strong><span data-i18n="about.lead.part3">, primarily focused on backend development, but also capable of handling frontend tasks when required. Currently working as an</span> <strong data-i18n="about.lead.strong3">IT System Engineer Lead</strong> <span data-i18n="about.lead.part4">at Bank Sahabat Sampoerna.</span>
+                    </p>
+                    <p>
+                        <span data-i18n="about.p1.part1">I specialize in</span> <strong data-i18n="about.p1.strong1">banking application development</strong><span data-i18n="about.p1.part2">,</span> <strong data-i18n="about.p1.strong2">system integration</strong><span data-i18n="about.p1.part3">, and</span> <strong data-i18n="about.p1.strong3">DevOps</strong><span data-i18n="about.p1.part4">. Throughout my career, I have been involved in various projects including banking and financial systems, dealer management systems, and security tools.</span>
+                    </p>
+                    <p data-i18n="about.p2">
+                        My core competencies include:
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency1">Banking System Development & Integration with TEMENOS T24</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency2">API Design & System Architecture</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency3">Web Applications, Windows Services, and Desktop Applications</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency4">CI/CD Pipeline Management with Azure DevOps</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency5">Team Leadership, Code Review & Technical Mentoring</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about.competency6">Problem Solving & Research for System Improvements</span></li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label" data-i18n="about.stat.years">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label" data-i18n="about.stat.projects">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label" data-i18n="about.stat.companies">Companies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Banking</div>
+                        <div class="stat-label" data-i18n="about.stat.domain">Domain Expert</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="skills.title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Core Technical Skills -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i> <span data-i18n="skills.core">Core Technical Skills</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">Web API</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">Entity Framework</span>
+                        <span class="skill-tag">Dapper</span>
+                        <span class="skill-tag">LINQ</span>
+                        <span class="skill-tag">Lambda Expression</span>
+                        <span class="skill-tag">OOP</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i> <span data-i18n="skills.database">Database</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">T-SQL</span>
+                        <span class="skill-tag">Stored Procedures</span>
+                    </div>
+                </div>
+
+                <!-- System Integration -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-plug"></i> <span data-i18n="skills.integration">System Integration</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">SOAP</span>
+                        <span class="skill-tag">Windows Service</span>
+                        <span class="skill-tag">Message Queue</span>
+                        <span class="skill-tag">TEMENOS T24</span>
+                        <span class="skill-tag">Web Scraping</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i> <span data-i18n="skills.devops">DevOps & Tools</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">CI/CD Pipeline</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">IIS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Playwright</span>
+                    </div>
+                </div>
+
+                <!-- Architecture & Design -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-sitemap"></i> <span data-i18n="skills.engineering">Engineering Strength</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">System Architecture</span>
+                        <span class="skill-tag">API Design</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">Documentation</span>
+                        <span class="skill-tag">UAT Support</span>
+                        <span class="skill-tag">Go-Live Support</span>
+                    </div>
+                </div>
+
+                <!-- Other Technologies -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i> <span data-i18n="skills.other">Other Technologies</span>
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AngularJS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Crystal Reports</span>
+                        <span class="skill-tag">RDLC</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">VB.NET</span>
+                        <span class="skill-tag">Google Looker</span>
+                        <span class="skill-tag">AppScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="experience.title">Professional Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="timeline">
+                <!-- Bank Sahabat Sampoerna - Current Position -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.bss.lead.title">IT System Engineer Lead (.NET Developer & DevOps)</h3>
+                            <span class="timeline-period" data-i18n="exp.bss.lead.period">Mar 2023 - Present</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.bss.lead.company">PT. Bank Sahabat Sampoerna</span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.bss.lead.resp1">Lead development team and coordinate technical initiatives across banking projects</li>
+                            <li data-i18n="exp.bss.lead.resp2">Design application architecture and review functional specification documents (FSD)</li>
+                            <li data-i18n="exp.bss.lead.resp3">Develop and maintain mission-critical banking applications: Web Apps, Windows Services, Web APIs</li>
+                            <li data-i18n="exp.bss.lead.resp4">Configure servers and manage CI/CD pipelines using Azure DevOps</li>
+                            <li data-i18n="exp.bss.lead.resp5">Conduct code reviews, mentor team members, and establish best practices</li>
+                            <li data-i18n="exp.bss.lead.resp6">Provide technical leadership during SIT, UAT, and Go-Live phases</li>
+                            <li data-i18n="exp.bss.lead.resp7">Research and implement new methodologies and technologies to improve systems</li>
+                            <li data-i18n="exp.bss.lead.resp8">Collaborate with stakeholders to align technical solutions with business objectives</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>C#</span>
+                            <span>ASP.NET</span>
+                            <span>Web API</span>
+                            <span>Azure DevOps</span>
+                            <span>TEMENOS T24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Sahabat Sampoerna - Previous Position -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.bss.analyst.title">IT System Analyst (.NET Developer)</h3>
+                            <span class="timeline-period" data-i18n="exp.bss.analyst.period">Feb 2020 - Mar 2023</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.bss.analyst.company">PT. Bank Sahabat Sampoerna</span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.bss.analyst.resp1">Analyzed business requirements and translated them into technical specifications</li>
+                            <li data-i18n="exp.bss.analyst.resp2">Developed and maintained internal banking applications: LOS, MFOS, FOS, and web services</li>
+                            <li data-i18n="exp.bss.analyst.resp3">Integrated various applications with TEMENOS T24 banking core system</li>
+                            <li data-i18n="exp.bss.analyst.resp4">Designed and implemented RESTful APIs for system integration</li>
+                            <li data-i18n="exp.bss.analyst.resp5">Optimized database queries and stored procedures for better performance</li>
+                            <li data-i18n="exp.bss.analyst.resp6">Provided technical support during SIT, UAT, and Go-Live phases</li>
+                            <li data-i18n="exp.bss.analyst.resp7">Created comprehensive system documentation and technical specifications</li>
+                            <li data-i18n="exp.bss.analyst.resp8">Researched and applied new technologies for system improvements</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>ASP.NET</span>
+                            <span>Web API</span>
+                            <span>Entity Framework</span>
+                            <span>SQL Server</span>
+                            <span>Dapper</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PT. Asian Sigma Teknologi -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.ast.title">IT Consultant (.NET Developer)</h3>
+                            <span class="timeline-period" data-i18n="exp.ast.period">Jul 2019 - Jan 2020</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.ast.company">PT. Asian Sigma Teknologi</span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.ast.resp1">Developed and maintained banking applications and SOAP/REST web services</li>
+                            <li data-i18n="exp.ast.resp2">Integrated multiple banking applications with core banking system</li>
+                            <li data-i18n="exp.ast.resp3">Collaborated with cross-functional teams to ensure optimal system functionality</li>
+                            <li data-i18n="exp.ast.resp4">Performed code reviews and ensured coding standards compliance</li>
+                            <li data-i18n="exp.ast.resp5">Implemented security measures for sensitive banking transactions</li>
+                            <li data-i18n="exp.ast.resp6">Provided technical support during SIT, UAT, and Go-Live phases</li>
+                            <li data-i18n="exp.ast.resp7">Created and maintained comprehensive system documentation</li>
+                            <li data-i18n="exp.ast.resp8">Troubleshot and resolved production issues efficiently</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>C#</span>
+                            <span>ASP.NET</span>
+                            <span>Web Services</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PT. Asian Technology Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.ats.title">IT Consultant (.NET Developer)</h3>
+                            <span class="timeline-period" data-i18n="exp.ats.period">Aug 2018 - Jul 2019</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.ats.company">PT. Asian Technology Solutions</span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.ats.resp1">Developed banking applications and web services based on business requirements</li>
+                            <li data-i18n="exp.ats.resp2">Conducted system integration with various banking platforms and third-party systems</li>
+                            <li data-i18n="exp.ats.resp3">Designed database schema and optimized SQL queries for performance</li>
+                            <li data-i18n="exp.ats.resp4">Implemented RESTful Web APIs for seamless data exchange</li>
+                            <li data-i18n="exp.ats.resp5">Participated in requirements gathering sessions with business stakeholders</li>
+                            <li data-i18n="exp.ats.resp6">Provided comprehensive technical support during all project phases (Development, SIT, UAT, Go-Live)</li>
+                            <li data-i18n="exp.ats.resp7">Researched and implemented new methodologies and best practices for system enhancement</li>
+                            <li data-i18n="exp.ats.resp8">Created technical documentation including system design and API specifications</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>C#</span>
+                            <span>ASP.NET</span>
+                            <span>Web API</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PT. Clientsolve Mitra Solusi -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.cms.title">IT Consultant (.NET Developer)</h3>
+                            <span class="timeline-period" data-i18n="exp.cms.period">May 2016 - Jun 2018</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.cms.company">PT. Clientsolve Mitra Solusi</span>
+                            <span style="display: block; font-size: 0.9rem; color: var(--text-light); margin-top: 0.3rem;" data-i18n="exp.cms.placement">
+                                Placement at PT. TTNI, PT. Toyota Astra Motor
+                            </span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.cms.resp1">Developed comprehensive Dealer Management System (DMS) for Toyota Astra Motor nationwide dealers</li>
+                            <li data-i18n="exp.cms.resp2">Built RESTful Web APIs and web applications based on business requirements</li>
+                            <li data-i18n="exp.cms.resp3">Created Sales Module for vehicle sales management and tracking</li>
+                            <li data-i18n="exp.cms.resp4">Developed Demand Supply Module for inventory forecasting and management</li>
+                            <li data-i18n="exp.cms.resp5">Designed and implemented reusable framework components for system-wide use</li>
+                            <li data-i18n="exp.cms.resp6">Implemented responsive frontend using AngularJS with Bootstrap</li>
+                            <li data-i18n="exp.cms.resp7">Integrated system with mobile applications for field sales operations</li>
+                            <li data-i18n="exp.cms.resp8">Collaborated with business analysts to refine requirements and user stories</li>
+                            <li data-i18n="exp.cms.resp9">Provided technical support, bug fixes, and system enhancements</li>
+                            <li data-i18n="exp.cms.resp10">Created comprehensive system documentation and user manuals</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>ASP.NET MVC</span>
+                            <span>AngularJS</span>
+                            <span>Web API</span>
+                            <span>Entity Framework</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bionus -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title" data-i18n="exp.bionus.title">Java Developer (Internship)</h3>
+                            <span class="timeline-period" data-i18n="exp.bionus.period">Apr 2013 - Aug 2013</span>
+                        </div>
+                        <h4 class="timeline-company">
+                            <i class="fas fa-building"></i> <span data-i18n="exp.bionus.company">Bionus</span>
+                        </h4>
+                        <ul class="timeline-list">
+                            <li data-i18n="exp.bionus.resp1">Developed new features and enhancements for Bionmedis website</li>
+                            <li data-i18n="exp.bionus.resp2">Maintained existing web application modules and fixed bugs</li>
+                            <li data-i18n="exp.bionus.resp3">Participated in code reviews and team development meetings</li>
+                            <li data-i18n="exp.bionus.resp4">Compiled and maintained technical documentation for system enhancements</li>
+                            <li data-i18n="exp.bionus.resp5">Collaborated with senior developers to learn best practices</li>
+                        </ul>
+                        <div class="tech-used">
+                            <span>Java</span>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Handpicked highlights from <span class="highlight-number">100+</span> mission-critical applications delivered for enterprise & banking environments</p>
+            </div>
+            <div class="projects-grid">
+                <!-- SIBER - Balance Monitoring System (NEW!) -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.siber.title">SIBER - Balance Monitoring System</h3>
+                    <span class="project-category" data-i18n="proj.siber.category">Banking Application</span>
+                    <p class="project-description" data-i18n="proj.siber.desc">
+                        Enterprise-grade real-time balance monitoring system utilizing Playwright browser automation 
+                        to continuously detect and alert discrepancies between TEMENOS T24 core banking system and 
+                        Portal BI. Features comprehensive multi-level alert system with configurable thresholds, 
+                        audio notifications, Google Chat webhooks integration, and role-based access control for 
+                        different user levels (operator, supervisor, admin).
+                    </p>
+                    <div class="project-tech">
+                        <span>.NET 9.0</span>
+                        <span>WinForms</span>
+                        <span>Playwright</span>
+                        <span>SQL Server</span>
+                        <span>Web Scraping</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.siber.hl1">Automated monitoring</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.siber.hl2">Real-time alerts</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.siber.hl3">Role-based access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banking Systems Project -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.banking.title">Banking Systems & Financial Applications</h3>
+                    <span class="project-category" data-i18n="proj.banking.category">Banking Application</span>
+                    <p class="project-description" data-i18n="proj.banking.desc">
+                        Comprehensive suite of mission-critical banking applications integrated with TEMENOS T24 core system. 
+                        Includes Digital Signature System with secure authentication, E-KTP verification system, 
+                        Loan Origination System (LOS), Motorcycle Financing Origination System (MFOS), 
+                        Financing Origination System (FOS), Dealer Management LOS (DMS LOS), Consumer Financing 
+                        Origination System (CFOS), and RESTful Web API integration for PDAja.com marketplace 
+                        and external partner systems. All applications follow banking security standards and 
+                        regulatory compliance requirements.
+                    </p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET</span>
+                        <span>Web API</span>
+                        <span>TEMENOS T24</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.banking.hl1">Digital signature system</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.banking.hl2">Core banking integration</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.banking.hl3">Production ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dealer Management System -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.dms.title">Dealer Management System (DMS)</h3>
+                    <span class="project-category" data-i18n="proj.dms.category">Enterprise System</span>
+                    <p class="project-description" data-i18n="proj.dms.desc">
+                        Enterprise-level Dealer Management System deployed across Toyota Astra Motor's nationwide 
+                        dealer network. The comprehensive solution includes Sales Module for end-to-end vehicle 
+                        sales lifecycle management, Demand Supply Module with predictive analytics for inventory 
+                        optimization and forecasting, Parameter Management for configurable business rules, 
+                        and robust Framework architecture for scalability. Features responsive web interface 
+                        built with AngularJS and Bootstrap, seamless integration with mobile field sales 
+                        applications, and real-time synchronization with headquarters system.
+                    </p>
+                    <div class="project-tech">
+                        <span>ASP.NET MVC</span>
+                        <span>AngularJS</span>
+                        <span>Web API</span>
+                        <span>Entity Framework</span>
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.dms.hl1">Multiple modules</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.dms.hl2">Mobile integration</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.dms.hl3">Used by dealers nationwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Encryption Tool -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.encryption.title">Application Encryption Tool</h3>
+                    <span class="project-category" data-i18n="proj.encryption.category">Security Tool</span>
+                    <p class="project-description" data-i18n="proj.encryption.desc">
+                        Enterprise security utility designed for encrypting and decrypting sensitive configuration 
+                        sections in ASP.NET web.config and app.config files. Utilizes .NET's built-in DPAPI 
+                        (Data Protection API) and RSA cryptography providers to secure connection strings, 
+                        API keys, and other sensitive configuration data. Features include batch processing, 
+                        backup management, and compliance with security best practices for application deployment. 
+                        Ensures protection of sensitive data at rest while maintaining ease of configuration 
+                        management across development, staging, and production environments.
+                    </p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>WinForms</span>
+                        <span>.NET Security</span>
+                        <span>Cryptography</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.encryption.hl1">Config encryption</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.encryption.hl2">Security compliance</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.encryption.hl3">Easy to use</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD Pipeline Implementation -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.cicd.title">CI/CD Pipeline Implementation</h3>
+                    <span class="project-category" data-i18n="proj.cicd.category">DevOps</span>
+                    <p class="project-description" data-i18n="proj.cicd.desc">
+                        Comprehensive DevOps solution implementing automated CI/CD pipeline infrastructure using 
+                        Azure DevOps for mission-critical banking applications. Features include automated build 
+                        processes with multi-stage YAML pipelines, automated unit and integration testing, 
+                        artifact management, and zero-downtime deployment strategies with blue-green deployment 
+                        approach. Includes automated server configuration, IIS management, environment-specific 
+                        configuration transformation, automated rollback procedures, and comprehensive monitoring. 
+                        Provides post-production support with detailed deployment logs and notification systems 
+                        integrated with Microsoft Teams.
+                    </p>
+                    <div class="project-tech">
+                        <span>Azure DevOps</span>
+                        <span>YAML Pipeline</span>
+                        <span>PowerShell</span>
+                        <span>IIS</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.cicd.hl1">Automated deployment</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.cicd.hl2">Faster delivery</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.cicd.hl3">Zero-downtime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Library Application -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="project-title" data-i18n="proj.library.title">Library Management System</h3>
+                    <span class="project-category" data-i18n="proj.library.category">Desktop Application</span>
+                    <p class="project-description" data-i18n="proj.library.desc">
+                        Comprehensive library management desktop application developed as diploma final project 
+                        for SMAN 1 Situraja school library. Features complete book lending lifecycle management 
+                        including cataloging, borrowing, returns, member management, and overdue tracking. 
+                        Implemented automated SMS notification system using Gammu for sending reminders to 
+                        members about due dates, overdue books, and reservation availability. Built with 
+                        Java Swing for intuitive user interface and MySQL database for data persistence. 
+                        Successfully deployed and used by school librarians for daily operations.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java Swing</span>
+                        <span>JDBC</span>
+                        <span>MySQL</span>
+                        <span>Gammu</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.library.hl1">Book management</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.library.hl2">SMS notification</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check"></i> <span data-i18n="proj.library.hl3">Final project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="education.title">Education & Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-graduation-cap"></i> <span data-i18n="education.column.education">Education</span>
+                    </h3>
+                    <div class="education-card">
+                        <h4 data-i18n="edu.binus.degree">Bachelor of Information Systems</h4>
+                        <p class="institution" data-i18n="edu.binus.institution">BINUS University, Jakarta</p>
+                        <p class="year" data-i18n="edu.binus.year">2017 - 2021 | GPA: 3.53</p>
+                    </div>
+                    <div class="education-card">
+                        <h4 data-i18n="edu.telkom.degree">Diploma in Information Management</h4>
+                        <p class="institution" data-i18n="edu.telkom.institution">Telkom University, Bandung</p>
+                        <p class="year" data-i18n="edu.telkom.year">2011 - 2015 | GPA: 3.49</p>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-trophy"></i> <span data-i18n="education.column.achievements">Achievements & Activities</span>
+                    </h3>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-i18n="achieve.kode.title">Top 300 KodeIndonesia</h4>
+                            <p data-i18n="achieve.kode.desc">Ranked 174 out of thousands of developers</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4 data-i18n="achieve.shift.title">Co-Founder Shift Corporation</h4>
+                            <p data-i18n="achieve.shift.desc">Technology startup focused on digital solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Feel free to reach out for opportunities or collaboration</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <p><a href="mailto:fikrisoftware@gmail.com">fikrisoftware@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3 data-i18n="contact.linkedin">LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/mfa-muhammadfikriakbar/" target="_blank" rel="noopener noreferrer">mfa-muhammadfikriakbar</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3 data-i18n="contact.github">GitHub</h3>
+                        <p><a href="https://github.com/fikrisoftware" target="_blank" rel="noopener noreferrer">github.com/fikrisoftware</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 data-i18n="contact.location">Location</h3>
+                        <p data-i18n="contact.location.value">Indonesia</p>
+                    </div>
+                </div>
+                <div class="contact-availability">
+                    <div class="availability-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3 data-i18n="contact.availability">Availability</h3>
+                        <p data-i18n="contact.available">Available with 1 month notice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span data-i18n="footer.copyright">2024 Muhammad Fikri Akbar. All rights reserved.</span></p>
+            <p class="footer-tagline" data-i18n="footer.tagline">Senior .NET Developer | Banking & Enterprise Systems Specialist</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/theme.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
