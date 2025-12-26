@@ -71,7 +71,10 @@
                 <!-- Profile Image -->
                 <div class="hero-profile">
                     <div class="profile-image-wrapper">
-                        <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" width="200" height="200" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <picture>
+                            <source type="image/webp" srcset="assets/IMAGES/Profile.webp">
+                            <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" width="200" height="200" loading="eager" onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+                        </picture>
                         <div class="profile-placeholder" style="display: none;">MFA</div>
                     </div>
                 </div>
@@ -791,5 +794,20 @@
     <script src="js/theme.js" defer></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('ServiceWorker registered:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
