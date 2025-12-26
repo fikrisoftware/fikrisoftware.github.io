@@ -18,15 +18,16 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     
     <!-- Preload critical CSS -->
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="css/theme.css" as="style">
+    <link rel="preload" href="css/style.css?v=1.0.0" as="style">
+    <link rel="preload" href="css/theme.css?v=1.0.0" as="style">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" href="css/theme.css?v=1.0.0">
     
-    <!-- Google Fonts with font-display swap for better performance -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Async loading to prevent render blocking -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Font Awesome with defer loading -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
@@ -64,16 +65,30 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <!-- Profile Image -->
                 <div class="hero-profile">
                     <div class="profile-image-wrapper">
                         <picture>
-                            <source type="image/webp" srcset="assets/IMAGES/Profile.webp">
-                            <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" width="200" height="200" loading="eager" onerror="this.style.display='none'; this.parentElement.nextElementSibling.style.display='flex';">
+                            <source type="image/webp" 
+                                    srcset="assets/IMAGES/Profile-200.webp?v=1.0.0 1x,
+                                            assets/IMAGES/Profile-400.webp?v=1.0.0 2x"
+                                    media="(max-width: 768px)">
+                            <source type="image/webp" 
+                                    srcset="assets/IMAGES/Profile-200.webp?v=1.0.0 1x,
+                                            assets/IMAGES/Profile-400.webp?v=1.0.0 2x">
+                            <img src="assets/IMAGES/Profile-200.webp?v=1.0.0" 
+                                 alt="Muhammad Fikri Akbar" 
+                                 class="profile-image" 
+                                 width="200" 
+                                 height="200" 
+                                 loading="eager" 
+                                 onerror="this.src='assets/IMAGES/Profile.png?v=1.0.0'">
                         </picture>
                         <div class="profile-placeholder" style="display: none;">MFA</div>
                     </div>
@@ -95,7 +110,7 @@
                     <a href="https://www.linkedin.com/in/mfa-muhammadfikriakbar/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                         <i class="fab fa-linkedin"></i> <span data-i18n="hero.btn.linkedin">LinkedIn</span>
                     </a>
-                    <a href="assets/CV_Muhammad_Fikri_Akbar.pdf" download class="btn btn-outline">
+                    <a href="assets/CV_Muhammad_Fikri_Akbar.pdf?v=1.0.0" download class="btn btn-outline">
                         <i class="fas fa-download"></i> <span data-i18n="hero.btn.downloadcv">Download CV</span>
                     </a>
                 </div>
@@ -775,7 +790,8 @@
                 </div>
             </div>
         </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -791,15 +807,15 @@
     </button>
 
     <!-- JavaScript files with defer for better performance -->
-    <script src="js/theme.js" defer></script>
-    <script src="js/i18n.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/theme.js?v=1.0.0" defer></script>
+    <script src="js/i18n.js?v=1.0.0" defer></script>
+    <script src="js/script.js?v=1.0.0" defer></script>
     
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('/sw.js?v=1.0.0')
                     .then((registration) => {
                         console.log('ServiceWorker registered:', registration.scope);
                     })
