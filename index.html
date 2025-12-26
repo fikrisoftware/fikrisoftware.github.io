@@ -7,12 +7,30 @@
     <meta name="keywords" content=".NET Developer, System Engineer, Banking Systems, ASP.NET, C#, DevOps">
     <meta name="author" content="Muhammad Fikri Akbar">
     <title>Muhammad Fikri Akbar | Senior .NET Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/theme.css">
+    
+    <!-- Preconnect to external domains for faster resource loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- DNS Prefetch as fallback for older browsers -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/theme.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    
+    <!-- Google Fonts with font-display swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Font Awesome with defer loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Navigation -->
@@ -53,7 +71,7 @@
                 <!-- Profile Image -->
                 <div class="hero-profile">
                     <div class="profile-image-wrapper">
-                        <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="assets/IMAGES/Profile.png" alt="Muhammad Fikri Akbar" class="profile-image" width="200" height="200" loading="eager" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="profile-placeholder" style="display: none;">MFA</div>
                     </div>
                 </div>
@@ -769,8 +787,9 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="js/theme.js"></script>
-    <script src="js/i18n.js"></script>
-    <script src="js/script.js"></script>
+    <!-- JavaScript files with defer for better performance -->
+    <script src="js/theme.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
