@@ -11,16 +11,18 @@ const translations = {
         'nav.experience': 'Experience',
         'nav.projects': 'Projects',
         'nav.contact': 'Contact',
-        
+
         // Hero Section
-        'hero.subtitle': 'Fullstack .NET Developer | IT System Engineer Lead',
+        'hero.subtitle': 'Fullstack Developer (.NET & Node.js) | IT System Engineer Lead',
         'hero.description1': '9+ years experience in Banking & Financial Systems,',
-        'hero.description2': 'System Integration, Web API, and DevOps with Azure',
+        'hero.description2': 'System Integration, Web API, DevOps with Azure & Modern Web Stack',
         'hero.company': 'Currently working at',
         'hero.btn.contact': 'Contact Me',
         'hero.btn.linkedin': 'LinkedIn',
         'hero.btn.downloadcv': 'Download CV',
-        
+        'hero.btn.printpdf': 'Download as PDF',
+        'hero.btn.viewcv': 'View Resume',
+
         // About Section
         'about.title': 'About Me',
         'about.lead.part1': 'I am a',
@@ -48,7 +50,7 @@ const translations = {
         'about.stat.projects': 'Projects Delivered',
         'about.stat.companies': 'Companies',
         'about.stat.domain': 'Domain Expert',
-        
+
         // Skills Section
         'skills.title': 'Skills & Expertise',
         'skills.core': 'Core Technical Skills',
@@ -56,12 +58,13 @@ const translations = {
         'skills.integration': 'System Integration',
         'skills.devops': 'DevOps & Tools',
         'skills.engineering': 'Engineering Strength',
+        'skills.modern': 'Modern Web Development',
         'skills.other': 'Other Technologies',
-        
+
         // Experience Section
         'experience.title': 'Professional Experience',
         'experience.present': 'Present',
-        
+
         // Bank Sahabat Sampoerna - Lead Position
         'exp.bss.lead.title': 'IT System Engineer Lead (.NET Developer & DevOps)',
         'exp.bss.lead.period': 'Mar 2023 - Present',
@@ -74,7 +77,7 @@ const translations = {
         'exp.bss.lead.resp6': 'Provide technical leadership during SIT, UAT, and Go-Live phases',
         'exp.bss.lead.resp7': 'Research and implement new methodologies and technologies to improve systems',
         'exp.bss.lead.resp8': 'Collaborate with stakeholders to align technical solutions with business objectives',
-        
+
         // Bank Sahabat Sampoerna - Analyst Position
         'exp.bss.analyst.title': 'IT System Analyst (.NET Developer)',
         'exp.bss.analyst.period': 'Feb 2020 - Mar 2023',
@@ -87,7 +90,7 @@ const translations = {
         'exp.bss.analyst.resp6': 'Provided technical support during SIT, UAT, and Go-Live phases',
         'exp.bss.analyst.resp7': 'Created comprehensive system documentation and technical specifications',
         'exp.bss.analyst.resp8': 'Researched and applied new technologies for system improvements',
-        
+
         // PT. Asian Sigma Teknologi
         'exp.ast.title': 'IT Consultant (.NET Developer)',
         'exp.ast.period': 'Jul 2019 - Jan 2020',
@@ -100,7 +103,7 @@ const translations = {
         'exp.ast.resp6': 'Provided technical support during SIT, UAT, and Go-Live phases',
         'exp.ast.resp7': 'Created and maintained comprehensive system documentation',
         'exp.ast.resp8': 'Troubleshot and resolved production issues efficiently',
-        
+
         // PT. Asian Technology Solutions
         'exp.ats.title': 'IT Consultant (.NET Developer)',
         'exp.ats.period': 'Aug 2018 - Jul 2019',
@@ -113,7 +116,7 @@ const translations = {
         'exp.ats.resp6': 'Provided comprehensive technical support during all project phases (Development, SIT, UAT, Go-Live)',
         'exp.ats.resp7': 'Researched and implemented new methodologies and best practices for system enhancement',
         'exp.ats.resp8': 'Created technical documentation including system design and API specifications',
-        
+
         // PT. Clientsolve Mitra Solusi
         'exp.cms.title': 'IT Consultant (.NET Developer)',
         'exp.cms.period': 'May 2016 - Jun 2018',
@@ -129,7 +132,7 @@ const translations = {
         'exp.cms.resp8': 'Collaborated with business analysts to refine requirements and user stories',
         'exp.cms.resp9': 'Provided technical support, bug fixes, and system enhancements',
         'exp.cms.resp10': 'Created comprehensive system documentation and user manuals',
-        
+
         // Bionus
         'exp.bionus.title': 'Java Developer (Internship)',
         'exp.bionus.period': 'Apr 2013 - Aug 2013',
@@ -139,11 +142,11 @@ const translations = {
         'exp.bionus.resp3': 'Participated in code reviews and team development meetings',
         'exp.bionus.resp4': 'Compiled and maintained technical documentation for system enhancements',
         'exp.bionus.resp5': 'Collaborated with senior developers to learn best practices',
-        
+
         // Projects Section
         'projects.title': 'Featured Projects',
         'projects.subtitle': 'Handpicked highlights from <span class="highlight-number">100+</span> mission-critical applications delivered for enterprise & banking environments',
-        
+
         // SIBER Project
         'proj.siber.title': 'SIBER - Balance Monitoring System',
         'proj.siber.category': 'Banking Application',
@@ -151,7 +154,7 @@ const translations = {
         'proj.siber.hl1': 'Automated monitoring',
         'proj.siber.hl2': 'Real-time alerts',
         'proj.siber.hl3': 'Role-based access',
-        
+
         // Banking Systems
         'proj.banking.title': 'Banking Systems & Financial Applications',
         'proj.banking.category': 'Banking Application',
@@ -159,7 +162,7 @@ const translations = {
         'proj.banking.hl1': 'Digital signature system',
         'proj.banking.hl2': 'Core banking integration',
         'proj.banking.hl3': 'Production ready',
-        
+
         // DMS
         'proj.dms.title': 'Dealer Management System (DMS)',
         'proj.dms.category': 'Enterprise System',
@@ -167,7 +170,7 @@ const translations = {
         'proj.dms.hl1': 'Multiple modules',
         'proj.dms.hl2': 'Mobile integration',
         'proj.dms.hl3': 'Used by dealers nationwide',
-        
+
         // Encryption Tool
         'proj.encryption.title': 'Application Encryption Tool',
         'proj.encryption.category': 'Security Tool',
@@ -175,7 +178,7 @@ const translations = {
         'proj.encryption.hl1': 'Config encryption',
         'proj.encryption.hl2': 'Security compliance',
         'proj.encryption.hl3': 'Easy to use',
-        
+
         // CI/CD
         'proj.cicd.title': 'CI/CD Pipeline Implementation',
         'proj.cicd.category': 'DevOps',
@@ -183,7 +186,7 @@ const translations = {
         'proj.cicd.hl1': 'Automated deployment',
         'proj.cicd.hl2': 'Faster delivery',
         'proj.cicd.hl3': 'Zero-downtime',
-        
+
         // Library
         'proj.library.title': 'Library Management System',
         'proj.library.category': 'Desktop Application',
@@ -191,28 +194,44 @@ const translations = {
         'proj.library.hl1': 'Book management',
         'proj.library.hl2': 'SMS notification',
         'proj.library.hl3': 'Final project',
-        
+
+        // Modern Web Platform
+        'proj.modern.title': 'Modern Web Platform',
+        'proj.modern.category': 'Side Project',
+        'proj.modern.desc': 'Full-stack SaaS web application built with the modern JavaScript ecosystem. Features server-side rendering with Next.js, type-safe API routes, AI-powered chatbot integration, payment gateway (Midtrans), and Google OAuth authentication. Includes responsive UI with Tailwind CSS, Prisma ORM for database management, and Google AdSense monetization. Deployed using Vercel with CI/CD pipeline.',
+        'proj.modern.hl1': 'Full-stack with SSR',
+        'proj.modern.hl2': 'Payment & Auth integration',
+        'proj.modern.hl3': 'AI-powered features',
+
+        // shrt.my.id
+        'proj.shrt.title': 'shrt.my.id \u2014 Smart URL Shortener',
+        'proj.shrt.category': 'SaaS Product',
+        'proj.shrt.desc': 'Production SaaS platform for smart URL shortening, QR code generation, and link monetization. Users can shorten any URL, instantly generate a downloadable QR code, and optionally monetize their links via interstitial ads. Features include real-time click analytics, custom slug support, Google OAuth authentication, and a freemium pricing model. Live product with 10K+ links created and 500K+ total clicks.',
+        'proj.shrt.hl1': '10K+ links, 500K+ clicks',
+        'proj.shrt.hl2': 'QR code & link monetization',
+        'proj.shrt.hl3': '\ud83c\udf10 shrt.my.id',
+
         // Education Section
         'education.title': 'Education & Achievements',
         'education.column.education': 'Education',
         'education.column.achievements': 'Achievements & Activities',
-        
+
         // Education
         'edu.binus.degree': 'Bachelor of Information Systems',
         'edu.binus.institution': 'BINUS University, Jakarta',
         'edu.binus.year': '2017 - 2021 | GPA: 3.53',
-        
+
         'edu.telkom.degree': 'Diploma in Information Management',
         'edu.telkom.institution': 'Telkom University, Bandung',
         'edu.telkom.year': '2011 - 2015 | GPA: 3.49',
-        
+
         // Achievements
         'achieve.kode.title': 'Top 300 KodeIndonesia',
         'achieve.kode.desc': 'Ranked 174 out of thousands of developers',
-        
+
         'achieve.shift.title': 'Co-Founder Shift Corporation',
         'achieve.shift.desc': 'Technology startup focused on digital solutions',
-        
+
         // Contact Section
         'contact.title': 'Get In Touch',
         'contact.subtitle': 'Feel free to reach out for opportunities or collaboration',
@@ -223,10 +242,10 @@ const translations = {
         'contact.location.value': 'Indonesia',
         'contact.availability': 'Availability',
         'contact.available': 'Available with 1 month notice',
-        
+
         // Footer
         'footer.copyright': '2025 Muhammad Fikri Akbar. All rights reserved.',
-        'footer.tagline': 'Senior .NET Developer | Banking & Enterprise Systems Specialist',
+        'footer.tagline': 'Fullstack Developer (.NET & Node.js) | Banking & Enterprise Systems Specialist',
     },
     id: {
         // Navigation
@@ -236,16 +255,18 @@ const translations = {
         'nav.experience': 'Pengalaman',
         'nav.projects': 'Proyek',
         'nav.contact': 'Kontak',
-        
+
         // Hero Section
-        'hero.subtitle': 'Fullstack .NET Developer | IT System Engineer Lead',
+        'hero.subtitle': 'Fullstack Developer (.NET & Node.js) | IT System Engineer Lead',
         'hero.description1': '9+ tahun pengalaman di Banking & Financial Systems,',
-        'hero.description2': 'System Integration, Web API, dan DevOps dengan Azure',
+        'hero.description2': 'System Integration, Web API, DevOps, dan Modern Web Stack',
         'hero.company': 'Saat ini bekerja di',
         'hero.btn.contact': 'Hubungi Saya',
         'hero.btn.linkedin': 'LinkedIn',
         'hero.btn.downloadcv': 'Unduh CV',
-        
+        'hero.btn.printpdf': 'Unduh sebagai PDF',
+        'hero.btn.viewcv': 'Lihat Resume',
+
         // About Section
         'about.title': 'Tentang Saya',
         'about.lead.part1': 'Saya adalah seorang',
@@ -273,7 +294,7 @@ const translations = {
         'about.stat.projects': 'Proyek Terkirim',
         'about.stat.companies': 'Perusahaan',
         'about.stat.domain': 'Domain Expert',
-        
+
         // Skills Section
         'skills.title': 'Keahlian & Expertise',
         'skills.core': 'Keahlian Teknis Inti',
@@ -281,12 +302,13 @@ const translations = {
         'skills.integration': 'Integrasi Sistem',
         'skills.devops': 'DevOps & Tools',
         'skills.engineering': 'Kekuatan Engineering',
+        'skills.modern': 'Pengembangan Web Modern',
         'skills.other': 'Teknologi Lainnya',
-        
+
         // Experience Section
         'experience.title': 'Pengalaman Profesional',
         'experience.present': 'Sekarang',
-        
+
         // Bank Sahabat Sampoerna - Lead Position
         'exp.bss.lead.title': 'IT System Engineer Lead (.NET Developer & DevOps)',
         'exp.bss.lead.period': 'Mar 2023 - Sekarang',
@@ -299,7 +321,7 @@ const translations = {
         'exp.bss.lead.resp6': 'Memberikan kepemimpinan teknis selama fase SIT, UAT, dan Go-Live',
         'exp.bss.lead.resp7': 'Meneliti dan mengimplementasikan metodologi dan teknologi baru untuk meningkatkan sistem',
         'exp.bss.lead.resp8': 'Berkolaborasi dengan stakeholder untuk menyelaraskan solusi teknis dengan tujuan bisnis',
-        
+
         // Bank Sahabat Sampoerna - Analyst Position
         'exp.bss.analyst.title': 'IT System Analyst (.NET Developer)',
         'exp.bss.analyst.period': 'Feb 2020 - Mar 2023',
@@ -312,7 +334,7 @@ const translations = {
         'exp.bss.analyst.resp6': 'Memberikan dukungan teknis selama fase SIT, UAT, dan Go-Live',
         'exp.bss.analyst.resp7': 'Membuat dokumentasi sistem komprehensif dan spesifikasi teknis',
         'exp.bss.analyst.resp8': 'Meneliti dan menerapkan teknologi baru untuk peningkatan sistem',
-        
+
         // PT. Asian Sigma Teknologi
         'exp.ast.title': 'IT Consultant (.NET Developer)',
         'exp.ast.period': 'Jul 2019 - Jan 2020',
@@ -325,7 +347,7 @@ const translations = {
         'exp.ast.resp6': 'Memberikan dukungan teknis selama fase SIT, UAT, dan Go-Live',
         'exp.ast.resp7': 'Membuat dan memelihara dokumentasi sistem yang komprehensif',
         'exp.ast.resp8': 'Mengatasi dan menyelesaikan masalah produksi dengan efisien',
-        
+
         // PT. Asian Technology Solutions
         'exp.ats.title': 'IT Consultant (.NET Developer)',
         'exp.ats.period': 'Agu 2018 - Jul 2019',
@@ -338,7 +360,7 @@ const translations = {
         'exp.ats.resp6': 'Memberikan dukungan teknis komprehensif selama semua fase proyek (Development, SIT, UAT, Go-Live)',
         'exp.ats.resp7': 'Meneliti dan mengimplementasikan metodologi baru dan best practices untuk peningkatan sistem',
         'exp.ats.resp8': 'Membuat dokumentasi teknis termasuk desain sistem dan spesifikasi API',
-        
+
         // PT. Clientsolve Mitra Solusi
         'exp.cms.title': 'IT Consultant (.NET Developer)',
         'exp.cms.period': 'Mei 2016 - Jun 2018',
@@ -354,7 +376,7 @@ const translations = {
         'exp.cms.resp8': 'Berkolaborasi dengan business analyst untuk menyempurnakan requirements dan user stories',
         'exp.cms.resp9': 'Memberikan dukungan teknis, perbaikan bug, dan peningkatan sistem',
         'exp.cms.resp10': 'Membuat dokumentasi sistem komprehensif dan user manual',
-        
+
         // Bionus
         'exp.bionus.title': 'Java Developer (Magang)',
         'exp.bionus.period': 'Apr 2013 - Agu 2013',
@@ -364,11 +386,11 @@ const translations = {
         'exp.bionus.resp3': 'Berpartisipasi dalam code review dan pertemuan tim pengembangan',
         'exp.bionus.resp4': 'Menyusun dan memelihara dokumentasi teknis untuk enhancement sistem',
         'exp.bionus.resp5': 'Berkolaborasi dengan developer senior untuk mempelajari best practices',
-        
+
         // Projects Section
         'projects.title': 'Proyek Unggulan',
         'projects.subtitle': 'Pilihan terbaik dari <span class="highlight-number">100+</span> aplikasi mission-critical yang telah diserahkan untuk lingkungan enterprise & perbankan',
-        
+
         // SIBER Project
         'proj.siber.title': 'SIBER - Sistem Monitoring Balance',
         'proj.siber.category': 'Aplikasi Perbankan',
@@ -376,7 +398,7 @@ const translations = {
         'proj.siber.hl1': 'Monitoring otomatis',
         'proj.siber.hl2': 'Alert real-time',
         'proj.siber.hl3': 'Akses berbasis role',
-        
+
         // Banking Systems
         'proj.banking.title': 'Sistem Perbankan & Aplikasi Keuangan',
         'proj.banking.category': 'Aplikasi Perbankan',
@@ -384,7 +406,7 @@ const translations = {
         'proj.banking.hl1': 'Sistem digital signature',
         'proj.banking.hl2': 'Integrasi core banking',
         'proj.banking.hl3': 'Siap produksi',
-        
+
         // DMS
         'proj.dms.title': 'Dealer Management System (DMS)',
         'proj.dms.category': 'Sistem Enterprise',
@@ -392,7 +414,7 @@ const translations = {
         'proj.dms.hl1': 'Multiple modul',
         'proj.dms.hl2': 'Integrasi mobile',
         'proj.dms.hl3': 'Digunakan dealer nasional',
-        
+
         // Encryption Tool
         'proj.encryption.title': 'Application Encryption Tool',
         'proj.encryption.category': 'Security Tool',
@@ -400,7 +422,7 @@ const translations = {
         'proj.encryption.hl1': 'Enkripsi config',
         'proj.encryption.hl2': 'Kepatuhan keamanan',
         'proj.encryption.hl3': 'Mudah digunakan',
-        
+
         // CI/CD
         'proj.cicd.title': 'Implementasi CI/CD Pipeline',
         'proj.cicd.category': 'DevOps',
@@ -408,7 +430,7 @@ const translations = {
         'proj.cicd.hl1': 'Deployment otomatis',
         'proj.cicd.hl2': 'Delivery lebih cepat',
         'proj.cicd.hl3': 'Zero-downtime',
-        
+
         // Library
         'proj.library.title': 'Sistem Manajemen Perpustakaan',
         'proj.library.category': 'Aplikasi Desktop',
@@ -416,28 +438,44 @@ const translations = {
         'proj.library.hl1': 'Manajemen buku',
         'proj.library.hl2': 'Notifikasi SMS',
         'proj.library.hl3': 'Proyek akhir',
-        
+
+        // Modern Web Platform
+        'proj.modern.title': 'Platform Web Modern',
+        'proj.modern.category': 'Proyek Pribadi',
+        'proj.modern.desc': 'Aplikasi web SaaS full-stack yang dibangun dengan ekosistem JavaScript modern. Fitur server-side rendering dengan Next.js, API routes type-safe, integrasi chatbot berbasis AI, payment gateway (Midtrans), dan autentikasi Google OAuth. Termasuk UI responsif dengan Tailwind CSS, Prisma ORM untuk manajemen database, dan monetisasi Google AdSense. Di-deploy menggunakan Vercel dengan CI/CD pipeline.',
+        'proj.modern.hl1': 'Full-stack dengan SSR',
+        'proj.modern.hl2': 'Integrasi payment & auth',
+        'proj.modern.hl3': 'Fitur berbasis AI',
+
+        // shrt.my.id
+        'proj.shrt.title': 'shrt.my.id — Smart URL Shortener',
+        'proj.shrt.category': 'Produk SaaS',
+        'proj.shrt.desc': 'Platform SaaS produksi untuk URL shortening cerdas, pembuatan QR code, dan monetisasi link. Pengguna dapat mempersingkat URL apapun, langsung membuat QR code yang dapat diunduh, dan mengaktifkan monetisasi melalui iklan interstitial. Fitur mencakup analitik klik real-time, custom slug, autentikasi Google OAuth, dan model freemium. Produk live dengan 10K+ link dibuat dan 500K+ total klik.',
+        'proj.shrt.hl1': '10K+ link, 500K+ klik',
+        'proj.shrt.hl2': 'QR code & monetisasi link',
+        'proj.shrt.hl3': '🌐 shrt.my.id',
+
         // Education Section
         'education.title': 'Pendidikan & Pencapaian',
         'education.column.education': 'Pendidikan',
         'education.column.achievements': 'Pencapaian & Aktivitas',
-        
+
         // Education
         'edu.binus.degree': 'Sarjana Sistem Informasi',
         'edu.binus.institution': 'BINUS University, Jakarta',
         'edu.binus.year': '2017 - 2021 | IPK: 3.53',
-        
+
         'edu.telkom.degree': 'Diploma Manajemen Informasi',
         'edu.telkom.institution': 'Telkom University, Bandung',
         'edu.telkom.year': '2011 - 2015 | IPK: 3.49',
-        
+
         // Achievements
         'achieve.kode.title': 'Top 300 KodeIndonesia',
         'achieve.kode.desc': 'Peringkat 174 dari ribuan developer',
-        
+
         'achieve.shift.title': 'Co-Founder Shift Corporation',
         'achieve.shift.desc': 'Startup teknologi yang fokus pada solusi digital',
-        
+
         // Contact Section
         'contact.title': 'Hubungi Saya',
         'contact.subtitle': 'Jangan ragu untuk menghubungi untuk peluang atau kolaborasi',
@@ -448,10 +486,10 @@ const translations = {
         'contact.location.value': 'Indonesia',
         'contact.availability': 'Ketersediaan',
         'contact.available': 'Tersedia dengan pemberitahuan 1 bulan',
-        
+
         // Footer
         'footer.copyright': '2025 Muhammad Fikri Akbar. Semua hak dilindungi.',
-        'footer.tagline': 'Senior .NET Developer | Banking & Enterprise Systems Specialist',
+        'footer.tagline': 'Fullstack Developer (.NET & Node.js) | Banking & Enterprise Systems Specialist',
     }
 };
 
@@ -487,7 +525,7 @@ class LanguageManager {
         this.currentLang = lang;
         this.setStoredLanguage(lang);
         document.documentElement.setAttribute('lang', lang);
-        
+
         // Update all translatable elements
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
@@ -509,11 +547,11 @@ class LanguageManager {
     updateLanguageSelector(lang) {
         const langText = document.getElementById('lang-text');
         const langFlag = document.getElementById('lang-flag');
-        
+
         if (langText) {
             langText.textContent = lang.toUpperCase();
         }
-        
+
         if (langFlag) {
             langFlag.className = lang === 'en' ? 'fas fa-globe' : 'fas fa-globe';
         }

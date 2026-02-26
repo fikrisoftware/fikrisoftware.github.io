@@ -396,3 +396,17 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# ============================================
+# GitHub Copilot Agent Planning Files
+# ============================================
+# Ignore Copilot planning markdown files
+**/plan-*.md
+plan-*.md
+
+# Ignore Visual Studio Copilot temp files
+**/Temp/VisualStudio/copilot-vs/
+AppData/Local/Temp/VisualStudio/copilot-vs/
+
+# Ignore any temporary markdown files
+*.tmp.md
