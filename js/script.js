@@ -7,7 +7,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    
+
     // Animate hamburger icon
     const spans = navToggle.querySelectorAll('span');
     if (navMenu.classList.contains('active')) {
@@ -40,14 +40,14 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
     // Add shadow on scroll
     if (currentScroll > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
@@ -58,13 +58,13 @@ const sections = document.querySelectorAll('section[id]');
 
 function activateNavLink() {
     const scrollY = window.pageYOffset;
-    
+
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-        
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             navLinks.forEach(link => link.classList.remove('active'));
             if (navLink) {
@@ -84,7 +84,7 @@ navLinks.forEach(link => {
         e.preventDefault();
         const targetId = link.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-        
+
         if (targetSection) {
             const offsetTop = targetSection.offsetTop - 80;
             window.scrollTo({
@@ -152,43 +152,16 @@ if (footerYear) {
 }
 
 // ========================================
-// Typing Effect for Hero Subtitle (Optional)
-// ========================================
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Uncomment to enable typing effect
-// const heroSubtitle = document.querySelector('.hero-subtitle');
-// if (heroSubtitle) {
-//     const originalText = heroSubtitle.textContent;
-//     window.addEventListener('load', () => {
-//         typeWriter(heroSubtitle, originalText, 50);
-//     });
-// }
-
-// ========================================
 // Skill Tags Hover Effect Enhancement
 // ========================================
 const skillTags = document.querySelectorAll('.skill-tag');
 
 skillTags.forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
+    tag.addEventListener('mouseenter', function () {
         this.style.transform = 'scale(1.05)';
     });
-    
-    tag.addEventListener('mouseleave', function() {
+
+    tag.addEventListener('mouseleave', function () {
         this.style.transform = 'scale(1)';
     });
 });
@@ -203,16 +176,16 @@ projectCards.forEach(card => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        
+
         const rotateX = (y - centerY) / 20;
         const rotateY = (centerX - x) / 20;
-        
+
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
     });
-    
+
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
     });
@@ -231,21 +204,6 @@ if (downloadCVBtn) {
 }
 
 // ========================================
-// Email Protection (Anti-Spam)
-// ========================================
-function protectEmail() {
-    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-    emailLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            console.log('Email link clicked');
-            // Add analytics or additional protection here
-        });
-    });
-}
-
-protectEmail();
-
-// ========================================
 // Lazy Loading for Images (if added later)
 // ========================================
 if ('IntersectionObserver' in window) {
@@ -259,7 +217,7 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-    
+
     const images = document.querySelectorAll('img[data-src]');
     images.forEach(img => imageObserver.observe(img));
 }
@@ -271,7 +229,7 @@ window.addEventListener('load', () => {
     // Page load time
     const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
     console.log(`Page loaded in ${loadTime}ms`);
-    
+
     // Remove animation delay after load
     setTimeout(() => {
         document.body.classList.add('loaded');
@@ -288,7 +246,7 @@ document.addEventListener('keydown', (e) => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     }
-    
+
     // Press 'Escape' to close mobile menu
     if (e.key === 'Escape') {
         if (navMenu.classList.contains('active')) {
@@ -302,8 +260,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ========================================
-// Console Message (Optional)
+// Console Message
 // ========================================
-console.log('%c?? Welcome to Muhammad Fikri Akbar\'s Portfolio!', 'color: #00B4D8; font-size: 16px; font-weight: bold;');
-console.log('%cSenior .NET Developer | 9+ Years Experience', 'color: #0B2C4D; font-size: 12px;');
+console.log('%c👋 Welcome to Muhammad Fikri Akbar\'s Portfolio!', 'color: #00B4D8; font-size: 16px; font-weight: bold;');
+console.log('%cFullstack Developer (.NET & Node.js) | 9+ Years Experience', 'color: #0B2C4D; font-size: 12px;');
 console.log('%cInterested in collaboration? Let\'s connect!', 'color: #2E3A46; font-size: 12px;');

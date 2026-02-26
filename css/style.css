@@ -172,21 +172,21 @@ body::before {
     opacity: 0.03;
     z-index: -1;
     pointer-events: none;
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--accent-color) 1px, transparent 1px),
         linear-gradient(0deg, var(--accent-color) 1px, transparent 1px),
         radial-gradient(circle at 20% 30%, var(--accent-color) 2px, transparent 2px),
         radial-gradient(circle at 80% 70%, var(--accent-color) 2px, transparent 2px),
         radial-gradient(circle at 40% 80%, var(--accent-color) 1px, transparent 1px),
         radial-gradient(circle at 70% 20%, var(--accent-color) 1px, transparent 1px);
-    background-size: 
+    background-size:
         100px 100px,
         100px 100px,
         200px 200px,
         200px 200px,
         150px 150px,
         150px 150px;
-    background-position: 
+    background-position:
         0 0,
         0 0,
         0 0,
@@ -195,17 +195,7 @@ body::before {
         25px 25px;
 }
 
-/* Circuit decorations for hero */
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(91, 163, 187, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
-}
+/* Circuit decorations intentionally use ::before for the top-right glow (defined above) */
 
 /* Additional circuit lines in hero */
 .hero .container::before {
@@ -215,9 +205,9 @@ body::before {
     right: 10%;
     width: 150px;
     height: 150px;
-    background-image: 
-        linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
     background-size: 30px 30px;
     opacity: 0.5;
     pointer-events: none;
@@ -230,9 +220,9 @@ body::before {
     left: 5%;
     width: 120px;
     height: 120px;
-    background-image: 
-        linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
     background-size: 25px 25px;
     opacity: 0.4;
     pointer-events: none;
@@ -251,11 +241,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, 
-        transparent 0%, 
-        var(--accent-color) 20%, 
-        var(--accent-color) 80%, 
-        transparent 100%);
+    background: linear-gradient(90deg,
+            transparent 0%,
+            var(--accent-color) 20%,
+            var(--accent-color) 80%,
+            transparent 100%);
     opacity: 0.3;
 }
 
@@ -303,6 +293,7 @@ body::before {
     padding: 3px;
     background: linear-gradient(135deg, var(--accent-light), var(--accent-color));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -718,7 +709,7 @@ section {
 }
 
 .timeline-list li::before {
-    content: '?';
+    content: '\25B8';
     position: absolute;
     left: 0;
     color: var(--accent-color);
@@ -1294,20 +1285,90 @@ section {
     }
 }
 
-/* Print Styles */
+/* Print Styles / Download Web as PDF */
 @media print {
+
     .navbar,
     .nav-toggle,
     .back-to-top,
-    .hero-buttons {
-        display: none;
+    .hero-buttons,
+    .print-hide {
+        display: none !important;
     }
 
     body {
-        background-color: white;
+        background-color: white !important;
+        color: #1a1a1a !important;
+        font-size: 11pt;
+    }
+
+    .hero {
+        background: #1E3A5F !important;
+        color: white !important;
+        padding: 40px 0 30px !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .hero-title {
+        font-size: 24pt !important;
+    }
+
+    .hero-subtitle {
+        font-size: 14pt !important;
+    }
+
+    .section-title {
+        font-size: 16pt !important;
     }
 
     section {
+        padding: 20px 0 !important;
         page-break-inside: avoid;
     }
+
+    .project-card,
+    .timeline-content,
+    .education-card,
+    .achievement-card {
+        page-break-inside: avoid;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+
+    .stat-card {
+        background: #1E3A5F !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    a[href]::after {
+        content: none !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+/* PDF button style override for hero - matches btn-outline but distinct */
+.btn-pdf {
+    background-color: transparent;
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+.btn-pdf:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+/* Placement subtitle style in timeline */
+.timeline-placement {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.3rem;
 }
