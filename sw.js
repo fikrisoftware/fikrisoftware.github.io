@@ -2,18 +2,18 @@
 // Service Worker - Caching Strategy
 // ============================================
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v2.0.0';
 const CACHE_NAME = `mfa-portfolio-${CACHE_VERSION}`;
 const urlsToCache = [
     '/',
     '/index.html',
-    '/css/style.css?v=1.0.0',
-    '/css/theme.css?v=1.0.0',
-    '/js/script.js?v=1.0.0',
-    '/js/theme.js?v=1.0.0',
-    '/js/i18n.js?v=1.0.0',
-    '/assets/CV_Muhammad_Fikri_Akbar.pdf?v=1.0.0',
-    '/assets/IMAGES/Profile.webp?v=1.0.0',
+    '/css/style.css?v=2.0.0',
+    '/css/theme.css?v=2.0.0',
+    '/js/script.js?v=2.0.0',
+    '/js/theme.js?v=2.0.0',
+    '/js/i18n.js?v=2.0.0',
+    '/assets/CV_Muhammad_Fikri_Akbar.pdf?v=2.0.0',
+    '/assets/IMAGES/Profile.webp?v=2.0.0',
     'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];

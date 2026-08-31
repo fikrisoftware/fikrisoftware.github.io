@@ -263,5 +263,5 @@ document.addEventListener('keydown', (e) => {
 // Console Message
 // ========================================
 console.log('%c👋 Welcome to Muhammad Fikri Akbar\'s Portfolio!', 'color: #00B4D8; font-size: 16px; font-weight: bold;');
-console.log('%cFullstack Developer (.NET & Node.js) | 9+ Years Experience', 'color: #0B2C4D; font-size: 12px;');
+console.log('%cSenior IT System Engineer / Tech Lead | 10+ Years Experience', 'color: #0B2C4D; font-size: 12px;');
 console.log('%cInterested in collaboration? Let\'s connect!', 'color: #2E3A46; font-size: 12px;');

@@ -13,8 +13,8 @@ const translations = {
         'nav.contact': 'Contact',
 
         // Hero Section
-        'hero.subtitle': 'Fullstack Developer (.NET & Node.js) | IT System Engineer Lead',
-        'hero.description1': '9+ years experience in Banking & Financial Systems,',
+        'hero.subtitle': 'Senior IT System Engineer / Tech Lead | .NET Core, React, Go, Azure DevOps',
+        'hero.description1': '10+ years experience in Banking & Automotive Systems,',
         'hero.description2': 'System Integration, Web API, DevOps with Azure & Modern Web Stack',
         'hero.company': 'Currently working at',
         'hero.btn.contact': 'Contact Me',
@@ -26,11 +26,11 @@ const translations = {
         // About Section
         'about.title': 'About Me',
         'about.lead.part1': 'I am a',
-        'about.lead.strong1': 'Fullstack .NET Developer',
+        'about.lead.strong1': 'Senior Fullstack Engineer (C# / .NET, React, Go)',
         'about.lead.part2': 'with over',
-        'about.lead.strong2': '9 years of experience',
-        'about.lead.part3': ', primarily focused on backend development, but also capable of handling frontend tasks when required. Currently working as an',
-        'about.lead.strong3': 'IT System Engineer Lead',
+        'about.lead.strong2': '10 years of experience',
+        'about.lead.part3': ', spanning backend development, frontend, and DevOps. Currently working as a',
+        'about.lead.strong3': 'Senior IT System Engineer (Fullstack Developer & DevOps)',
         'about.lead.part4': 'at Bank Sahabat Sampoerna.',
         'about.p1.part1': 'I specialize in',
         'about.p1.strong1': 'banking application development',
@@ -66,7 +66,7 @@ const translations = {
         'experience.present': 'Present',
 
         // Bank Sahabat Sampoerna - Lead Position
-        'exp.bss.lead.title': 'IT System Engineer Lead (.NET Developer & DevOps)',
+        'exp.bss.lead.title': 'Senior IT System Engineer (Fullstack Developer & DevOps)',
         'exp.bss.lead.period': 'Mar 2023 - Present',
         'exp.bss.lead.company': 'PT. Bank Sahabat Sampoerna',
         'exp.bss.lead.resp1': 'Lead development team and coordinate technical initiatives across banking projects',
@@ -79,7 +79,7 @@ const translations = {
         'exp.bss.lead.resp8': 'Collaborate with stakeholders to align technical solutions with business objectives',
 
         // Bank Sahabat Sampoerna - Analyst Position
-        'exp.bss.analyst.title': 'IT System Analyst (.NET Developer)',
+        'exp.bss.analyst.title': 'Senior IT System Analyst (.NET Developer)',
         'exp.bss.analyst.period': 'Feb 2020 - Mar 2023',
         'exp.bss.analyst.company': 'PT. Bank Sahabat Sampoerna',
         'exp.bss.analyst.resp1': 'Analyzed business requirements and translated them into technical specifications',
@@ -91,10 +91,10 @@ const translations = {
         'exp.bss.analyst.resp7': 'Created comprehensive system documentation and technical specifications',
         'exp.bss.analyst.resp8': 'Researched and applied new technologies for system improvements',
 
-        // PT. Asian Sigma Teknologi
-        'exp.ast.title': 'IT Consultant (.NET Developer)',
+        // SIGMATech
+        'exp.ast.title': 'IT System Analyst (Outsource .NET Developer)',
         'exp.ast.period': 'Jul 2019 - Jan 2020',
-        'exp.ast.company': 'PT. Asian Sigma Teknologi',
+        'exp.ast.company': 'SIGMATech',
         'exp.ast.resp1': 'Developed and maintained banking applications and SOAP/REST web services',
         'exp.ast.resp2': 'Integrated multiple banking applications with core banking system',
         'exp.ast.resp3': 'Collaborated with cross-functional teams to ensure optimal system functionality',
@@ -105,7 +105,7 @@ const translations = {
         'exp.ast.resp8': 'Troubleshot and resolved production issues efficiently',
 
         // PT. Asian Technology Solutions
-        'exp.ats.title': 'IT Consultant (.NET Developer)',
+        'exp.ats.title': 'IT System Analyst (Outsource .NET Developer)',
         'exp.ats.period': 'Aug 2018 - Jul 2019',
         'exp.ats.company': 'PT. Asian Technology Solutions',
         'exp.ats.resp1': 'Developed banking applications and web services based on business requirements',
@@ -118,10 +118,10 @@ const translations = {
         'exp.ats.resp8': 'Created technical documentation including system design and API specifications',
 
         // PT. Clientsolve Mitra Solusi
-        'exp.cms.title': 'IT Consultant (.NET Developer)',
-        'exp.cms.period': 'May 2016 - Jun 2018',
+        'exp.cms.title': 'Software Developer (.NET Developer)',
+        'exp.cms.period': 'Mar 2016 - Jun 2018',
         'exp.cms.company': 'PT. Clientsolve Mitra Solusi',
-        'exp.cms.placement': 'Placement at PT. TTNI, PT. Toyota Astra Motor',
+        'exp.cms.placement': 'Placement at Toyota Astra Motor',
         'exp.cms.resp1': 'Developed comprehensive Dealer Management System (DMS) for Toyota Astra Motor nationwide dealers',
         'exp.cms.resp2': 'Built RESTful Web APIs and web applications based on business requirements',
         'exp.cms.resp3': 'Created Sales Module for vehicle sales management and tracking',
@@ -145,7 +145,7 @@ const translations = {
 
         // Projects Section
         'projects.title': 'Featured Projects',
-        'projects.subtitle': 'Handpicked highlights from <span class="highlight-number">100+</span> mission-critical applications delivered for enterprise & banking environments',
+        'projects.subtitle': 'Handpicked highlights from <span class="highlight-number">300+</span> mission-critical applications delivered for enterprise & banking environments',
 
         // SIBER Project
         'proj.siber.title': 'SIBER - Balance Monitoring System',
@@ -244,8 +244,8 @@ const translations = {
         'contact.available': 'Available with 1 month notice',
 
         // Footer
-        'footer.copyright': '2025 Muhammad Fikri Akbar. All rights reserved.',
-        'footer.tagline': 'Fullstack Developer (.NET & Node.js) | Banking & Enterprise Systems Specialist',
+        'footer.copyright': '2026 Muhammad Fikri Akbar. All rights reserved.',
+        'footer.tagline': 'Senior IT System Engineer / Tech Lead | Banking & Automotive Systems Specialist',
     },
     id: {
         // Navigation
@@ -257,8 +257,8 @@ const translations = {
         'nav.contact': 'Kontak',
 
         // Hero Section
-        'hero.subtitle': 'Fullstack Developer (.NET & Node.js) | IT System Engineer Lead',
-        'hero.description1': '9+ tahun pengalaman di Banking & Financial Systems,',
+        'hero.subtitle': 'Senior IT System Engineer / Tech Lead | .NET Core, React, Go, Azure DevOps',
+        'hero.description1': '10+ tahun pengalaman di Banking & Automotive Systems,',
         'hero.description2': 'System Integration, Web API, DevOps, dan Modern Web Stack',
         'hero.company': 'Saat ini bekerja di',
         'hero.btn.contact': 'Hubungi Saya',
@@ -270,11 +270,11 @@ const translations = {
         // About Section
         'about.title': 'Tentang Saya',
         'about.lead.part1': 'Saya adalah seorang',
-        'about.lead.strong1': 'Fullstack .NET Developer',
+        'about.lead.strong1': 'Senior Fullstack Engineer (C# / .NET, React, Go)',
         'about.lead.part2': 'dengan lebih dari',
-        'about.lead.strong2': '9 tahun pengalaman',
-        'about.lead.part3': ', terutama fokus pada pengembangan backend, tetapi juga mampu menangani tugas frontend bila diperlukan. Saat ini bekerja sebagai',
-        'about.lead.strong3': 'IT System Engineer Lead',
+        'about.lead.strong2': '10 tahun pengalaman',
+        'about.lead.part3': ', mencakup pengembangan backend, frontend, dan DevOps. Saat ini bekerja sebagai',
+        'about.lead.strong3': 'Senior IT System Engineer (Fullstack Developer & DevOps)',
         'about.lead.part4': 'di Bank Sahabat Sampoerna.',
         'about.p1.part1': 'Saya berspesialisasi dalam',
         'about.p1.strong1': 'pengembangan aplikasi perbankan',
@@ -310,7 +310,7 @@ const translations = {
         'experience.present': 'Sekarang',
 
         // Bank Sahabat Sampoerna - Lead Position
-        'exp.bss.lead.title': 'IT System Engineer Lead (.NET Developer & DevOps)',
+        'exp.bss.lead.title': 'Senior IT System Engineer (Fullstack Developer & DevOps)',
         'exp.bss.lead.period': 'Mar 2023 - Sekarang',
         'exp.bss.lead.company': 'PT. Bank Sahabat Sampoerna',
         'exp.bss.lead.resp1': 'Memimpin tim pengembangan dan mengoordinasikan inisiatif teknis di berbagai proyek perbankan',
@@ -323,7 +323,7 @@ const translations = {
         'exp.bss.lead.resp8': 'Berkolaborasi dengan stakeholder untuk menyelaraskan solusi teknis dengan tujuan bisnis',
 
         // Bank Sahabat Sampoerna - Analyst Position
-        'exp.bss.analyst.title': 'IT System Analyst (.NET Developer)',
+        'exp.bss.analyst.title': 'Senior IT System Analyst (.NET Developer)',
         'exp.bss.analyst.period': 'Feb 2020 - Mar 2023',
         'exp.bss.analyst.company': 'PT. Bank Sahabat Sampoerna',
         'exp.bss.analyst.resp1': 'Menganalisis kebutuhan bisnis dan menerjemahkannya ke dalam spesifikasi teknis',
@@ -335,10 +335,10 @@ const translations = {
         'exp.bss.analyst.resp7': 'Membuat dokumentasi sistem komprehensif dan spesifikasi teknis',
         'exp.bss.analyst.resp8': 'Meneliti dan menerapkan teknologi baru untuk peningkatan sistem',
 
-        // PT. Asian Sigma Teknologi
-        'exp.ast.title': 'IT Consultant (.NET Developer)',
+        // SIGMATech
+        'exp.ast.title': 'IT System Analyst (Outsource .NET Developer)',
         'exp.ast.period': 'Jul 2019 - Jan 2020',
-        'exp.ast.company': 'PT. Asian Sigma Teknologi',
+        'exp.ast.company': 'SIGMATech',
         'exp.ast.resp1': 'Mengembangkan dan memelihara aplikasi perbankan dan SOAP/REST web services',
         'exp.ast.resp2': 'Mengintegrasikan berbagai aplikasi perbankan dengan core banking system',
         'exp.ast.resp3': 'Berkolaborasi dengan tim lintas fungsi untuk memastikan fungsionalitas sistem yang optimal',
@@ -349,7 +349,7 @@ const translations = {
         'exp.ast.resp8': 'Mengatasi dan menyelesaikan masalah produksi dengan efisien',
 
         // PT. Asian Technology Solutions
-        'exp.ats.title': 'IT Consultant (.NET Developer)',
+        'exp.ats.title': 'IT System Analyst (Outsource .NET Developer)',
         'exp.ats.period': 'Agu 2018 - Jul 2019',
         'exp.ats.company': 'PT. Asian Technology Solutions',
         'exp.ats.resp1': 'Mengembangkan aplikasi perbankan dan web services berdasarkan kebutuhan bisnis',
@@ -362,10 +362,10 @@ const translations = {
         'exp.ats.resp8': 'Membuat dokumentasi teknis termasuk desain sistem dan spesifikasi API',
 
         // PT. Clientsolve Mitra Solusi
-        'exp.cms.title': 'IT Consultant (.NET Developer)',
-        'exp.cms.period': 'Mei 2016 - Jun 2018',
+        'exp.cms.title': 'Software Developer (.NET Developer)',
+        'exp.cms.period': 'Mar 2016 - Jun 2018',
         'exp.cms.company': 'PT. Clientsolve Mitra Solusi',
-        'exp.cms.placement': 'Penempatan di PT. TTNI, PT. Toyota Astra Motor',
+        'exp.cms.placement': 'Penempatan di Toyota Astra Motor',
         'exp.cms.resp1': 'Mengembangkan Dealer Management System (DMS) komprehensif untuk dealer Toyota Astra Motor di seluruh Indonesia',
         'exp.cms.resp2': 'Membangun RESTful Web APIs dan aplikasi web berdasarkan kebutuhan bisnis',
         'exp.cms.resp3': 'Membuat Sales Module untuk manajemen dan tracking penjualan kendaraan',
@@ -389,7 +389,7 @@ const translations = {
 
         // Projects Section
         'projects.title': 'Proyek Unggulan',
-        'projects.subtitle': 'Pilihan terbaik dari <span class="highlight-number">100+</span> aplikasi mission-critical yang telah diserahkan untuk lingkungan enterprise & perbankan',
+        'projects.subtitle': 'Pilihan terbaik dari <span class="highlight-number">300+</span> aplikasi mission-critical yang telah diserahkan untuk lingkungan enterprise & perbankan',
 
         // SIBER Project
         'proj.siber.title': 'SIBER - Sistem Monitoring Balance',
@@ -488,8 +488,8 @@ const translations = {
         'contact.available': 'Tersedia dengan pemberitahuan 1 bulan',
 
         // Footer
-        'footer.copyright': '2025 Muhammad Fikri Akbar. Semua hak dilindungi.',
-        'footer.tagline': 'Fullstack Developer (.NET & Node.js) | Banking & Enterprise Systems Specialist',
+        'footer.copyright': '2026 Muhammad Fikri Akbar. Semua hak dilindungi.',
+        'footer.tagline': 'Senior IT System Engineer / Tech Lead | Banking & Automotive Systems Specialist',
     }
 };
 
